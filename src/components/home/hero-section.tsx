@@ -151,7 +151,7 @@ export default function HeroSection() {
         {/* Main CTAs */}
         <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
           <Link 
-            href="#pricing"
+            href="/SoniqFlow-AI"
             className="bg-gradient-to-r from-primary via-[#97FEED] to-accent text-black font-bold px-8 py-3 rounded-full flex items-center gap-2 hover:shadow-[0_0_30px_rgba(var(--color-primary-rgb),0.6)] hover:scale-105 transition-all group"
           >
             Initialize Orchestration

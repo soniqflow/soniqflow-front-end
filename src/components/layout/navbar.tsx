@@ -128,15 +128,16 @@ export default function Navbar() {
             >
               Contact
             </Link>
-            <div
-              className="relative px-6 py-2.5 rounded-full bg-gradient-to-r from-[#071952] via-[#0B666A] to-[#35A29F] border border-[#35A29F]/30 group transition-all overflow-hidden cursor-default"
+            <Link
+              href="/SoniqFlow-AI"
+              className="relative px-6 py-2.5 rounded-full bg-gradient-to-r from-[#071952] via-[#0B666A] to-[#35A29F] border border-[#35A29F]/30 group transition-all overflow-hidden"
             >
               <div className="relative z-10 flex items-center gap-2">
                 <span className="text-[12px] font-bold text-white uppercase tracking-widest">Connect Hub</span>
                 <span className="text-[#97FEED]">→</span>
               </div>
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
-            </div>
+            </Link>
 
             {/* Mobile Hamburger */}
             <button
@@ -187,11 +188,13 @@ export default function Navbar() {
             <div className="mt-4 pt-4 border-t border-white/5 px-4 flex flex-col gap-3 relative z-10">
               {/* Mobile Status - Removed as requested */}
 
-              <div
-                className="w-full h-14 bg-gradient-to-r from-[#071952] to-[#35A29F] rounded-2xl flex items-center justify-center text-[13px] font-bold text-white uppercase tracking-widest cursor-default"
+              <Link
+                href="/SoniqFlow-AI"
+                onClick={() => setMobileOpen(false)}
+                className="w-full h-14 bg-gradient-to-r from-[#071952] to-[#35A29F] rounded-2xl flex items-center justify-center text-[13px] font-bold text-white uppercase tracking-widest transition-all hover:shadow-[0_0_20px_rgba(53,162,159,0.3)]"
               >
                 Connect to Command Hub
-              </div>
+              </Link>
             </div>
           </div>
         )}
